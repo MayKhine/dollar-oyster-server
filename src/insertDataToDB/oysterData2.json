@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1a",
+    "name": "Thirsty Scholar Pub",
+    "link": "https://saltandstoneboston.com/",
+    "lat": 42.376311,
+    "lng": -71.104222,
+    "address": "70 Beacon St, Somerville, MA 02143, USA",
+    "notes": "This laid-back bar offers $1 oysters every Tuesday. The deal starts at 4 p.m. and goes until they run out.",
+    "days": [0, 1, 0, 0, 0, 0, 0],
+    "from": "04:00 PM",
+    "to": "12:00 AM"
+  },
+  {
+    "id": "2a",
+    "name": "Sal + Stone",
+    "link": "https://saltandstoneboston.com/",
+    "lat": 42.3940718,
+    "lng": -71.0789321,
+    "address": "463 Assembly Row, Somerville, MA 02145",
+    "notes": "Salt + Stone in Somerville’s Assembly Row offers $1 oysters at the bar from Monday through Friday, 3 to 5 p.m.",
+    "days": [1, 1, 1, 1, 1, 0, 0],
+    "from": "03:00 PM",
+    "to": "05:00 PM"
+  },
+
+  {
+    "id": "3a",
+    "name": "Warren Tavern",
+    "link": "https://saltandstoneboston.com/",
+    "lat": 42.3741694,
+    "lng": -71.0631664,
+    "address": "2 Pleasant St, Boston, MA",
+    "notes": "Find $1 oysters at historic Charlestown spot Warren Tavern — which has counted George Washington and Paul Revere among its patrons — every weekday from 3 to 6 p.m.",
+    "days": [1, 1, 1, 1, 1, 0, 0],
+    "from": "03:00 PM",
+    "to": "06:00 PM"
+  }
+]

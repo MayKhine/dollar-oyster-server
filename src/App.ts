@@ -1,7 +1,11 @@
 import express from "express"
+import cors from "cors"
+import bodyParser from "body-parser"
 import { connectToMongoDB } from "./config/database"
-
+import { addPlace, checkIfPlaceExists, getPlaces } from "./apiCalls"
 const app = express()
+app.use(cors())
+app.use(bodyParser.json())
 const port = 3300
 
 const main = async () => {
@@ -18,6 +22,10 @@ const main = async () => {
   app.listen(port, () => {
     console.log("Express server is upppp")
   })
+
+  getPlaces(app, mongoDatabase)
+  addPlace(app, mongoDatabase)
+  checkIfPlaceExists(app, mongoDatabase)
 }
 
 main()

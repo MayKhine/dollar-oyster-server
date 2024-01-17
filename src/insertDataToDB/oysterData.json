@@ -1,5 +1,6 @@
 [
   {
+    "id": "1a",
     "name": "Thirsty Scholar Pub",
     "lat": 42.376311,
     "lng": -71.104222,
@@ -10,6 +11,7 @@
     "googleMapLink": "https://www.google.com/maps/place/Thirsty+Scholar+Pub/@42.376311,-71.104222,17z/data=!3m1!4b1!4m6!3m5!1s0x89e3774970eb475d:0xf295081f4049d37!8m2!3d42.376311!4d-71.104222!16s%2Fg%2F1tgb8c4b?entry=ttu"
   },
   {
+    "id": "2a",
     "name": "Sal + Stone",
     "lat": 42.3940718,
     "lng": -71.0789321,
@@ -21,6 +23,7 @@
   },
 
   {
+    "id": "3a",
     "name": "Warren Tavern",
     "lat": 42.3741694,
     "lng": -71.0631664,
@@ -31,9 +34,10 @@
     "googleMapLink": "https://www.google.com/maps/place/Warren+Tavern/@42.3741694,-71.0631664,17z/data=!3m1!4b1!4m6!3m5!1s0x89e370ed7348f66f:0x884dacf410968c9e!8m2!3d42.3741694!4d-71.0631664!16s%2Fm%2F03gy0j4?entry=ttu"
   },
   {
+    "id": "4a",
     "name": "Viale",
-    "lat": 42.3741694,
-    "lng": -71.0631664,
+    "lat": 42.3640063,
+    "lng": -71.1017954,
     "address": "502 Massachusetts Ave, Cambridge, MA",
     "phone": 6177641541,
     "notes": "Central Square restaurant Viale is shucking $1 oysters daily from 5 to 7 p.m.",
@@ -41,6 +45,7 @@
     "googleMapLink": "https://www.google.com/maps/place/Viale/@42.3640063,-71.1017954,17z/data=!4m6!3m5!1s0x89e377540cfccdd9:0x9a03f44bae811e0e!8m2!3d42.3640063!4d-71.1018061!16s%2Fg%2F11b6cj0yrx?entry=ttu"
   },
   {
+    "id": "5a",
     "name": "State Street Provisions",
     "lat": 42.3593857,
     "lng": -71.0513553,
@@ -51,6 +56,7 @@
     "googleMapLink": "https://www.google.com/maps/place/255+State+St,+Boston,+MA+02109/@42.3593857,-71.0513553,17z/data=!3m1!4b1!4m6!3m5!1s0x89e37087bfe70e9b:0xc41483eb6943b849!8m2!3d42.3593857!4d-71.0513553!16s%2Fg%2F11b8v49435?entry=ttu"
   },
   {
+    "id": "6a",
     "name": "Carrie Nation Cocktail Club",
     "lat": 42.3583663,
     "lng": -71.0616334,
