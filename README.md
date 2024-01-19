@@ -27,3 +27,9 @@ db.dollaroysterplaces.insertOne({id: '111', name: 'test', lat: 12, lng: 22, addr
 
 db.dollaroysterplaces.find({})
 db.dollaroysterplaces.deleteMany({})
+
+//adding love field to tall the data
+db.dollaroysterplaces.updateMany({},[{$set:{"love": 0}}])
+db.dollaroysterplaces.findOne({id: "69b10754-417d-4c34-abac-ad151ae01f2c"})
+
+db.dollaroysterplaces.updateOne({id: "69b10754-417d-4c34-abac-ad151ae01f2c"},{$inc: {"love": 1}})

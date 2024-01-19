@@ -79,3 +79,17 @@ export const addPlace = (app: any, database: Db) => {
     }
   })
 }
+
+export const lovePlace = (app: any, database: Db) => {
+  const oysterPlacesCollection = database.collection("dollaroysterplaces")
+  app.post("/love", async (req: any, res: any) => {
+    const data = req.body
+    console.log("Place ID: ", data.id)
+    const filter = { id: data.id }
+    const update = { $inc: { love: 1 } }
+    const result = await oysterPlacesCollection.updateOne(filter, update)
+
+    console.log("RESULT: ", result)
+    res.json({ "Love place result: ": result })
+  })
+}
