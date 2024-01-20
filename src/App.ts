@@ -2,7 +2,13 @@ import express from "express"
 import cors from "cors"
 import bodyParser from "body-parser"
 import { connectToMongoDB } from "./config/database"
-import { addPlace, checkIfPlaceExists, getPlaces, lovePlace } from "./apiCalls"
+import {
+  addPlace,
+  checkIfPlaceExists,
+  getPlaces,
+  lovePlace,
+  unlovePlace,
+} from "./apiCalls"
 const app = express()
 app.use(cors())
 app.use(bodyParser.json())
@@ -27,6 +33,7 @@ const main = async () => {
   addPlace(app, mongoDatabase)
   checkIfPlaceExists(app, mongoDatabase)
   lovePlace(app, mongoDatabase)
+  unlovePlace(app, mongoDatabase)
 }
 
 main()

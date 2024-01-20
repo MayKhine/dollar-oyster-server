@@ -93,3 +93,17 @@ export const lovePlace = (app: any, database: Db) => {
     res.json({ "Love place result: ": result })
   })
 }
+
+export const unlovePlace = (app: any, database: Db) => {
+  const oysterPlacesCollection = database.collection("dollaroysterplaces")
+  app.post("/unlove", async (req: any, res: any) => {
+    const data = req.body
+    console.log("Place ID: ", data.id)
+    const filter = { id: data.id }
+    const update = { $inc: { unlove: 1 } }
+    const result = await oysterPlacesCollection.updateOne(filter, update)
+
+    console.log("RESULT: ", result)
+    res.json({ "Unlove place result: ": result })
+  })
+}
