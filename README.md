@@ -40,3 +40,5 @@ db.dollaroysterplaces.updateOne({id: "69b10754-417d-4c34-abac-ad151ae01f2c"},{$i
 {
 comment: [{name: , text: } , {} , {}]
 }
+
+db.dollaroysterplaces.deleteMany({notes: 'TEST'})
