@@ -15,18 +15,19 @@ app.use(bodyParser.json())
 const port = 3300
 
 const main = async () => {
-  console.log("MAIN")
+  console.log("Express up .. ")
+  console.log("Connectiong to MOONGO db  ")
 
   //connect to mongoDB
   const mongoClient = await connectToMongoDB()
   const mongoDatabase = mongoClient.db("mydb")
 
   app.get("/", (req, res) => {
-    res.send("HELLO from express")
+    res.send("Server is up and connected to mongo db")
   })
 
   app.listen(port, () => {
-    console.log("Express server is upppp")
+    console.log("Server is up and connected to mongo db")
   })
 
   getPlaces(app, mongoDatabase)

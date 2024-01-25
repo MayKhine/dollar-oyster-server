@@ -42,3 +42,13 @@ comment: [{name: , text: } , {} , {}]
 }
 
 db.dollaroysterplaces.deleteMany({notes: 'TEST'})
+
+docker build --load -t oyster/server:0.0 .
+docker build --platform linux/arm64 -t oyster/server/arm64:0.0 .
+docker build --load -t oyster/server:0.0 .
+
+---
+
+- build docker image and get the id
+- use that id in docker compose yml
+- run using docker-compose up
