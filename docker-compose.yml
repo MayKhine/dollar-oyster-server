@@ -16,7 +16,7 @@ services:
       - my-network
 
   express-server:
-    image: 767277b1d5c5
+    image: 8f47b31e9d67
     # build:
     #   context: .
     #   dockerfile: Dockerfile
@@ -26,6 +26,9 @@ services:
       - "3300:3300"
     networks:
       - my-network
+    environment:
+      MONGO_USERNAME: root
+      MONGO_PASSWORD: example
     depends_on:
       - mongodb
 

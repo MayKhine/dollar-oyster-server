@@ -1,0 +1,48 @@
+version: "3.1"
+
+services:
+  mongodb:
+    image: mongo
+    container_name: my-mongodb-container
+    # restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    networks:
+      - my-network
+
+  express-server:
+    image: 8f47b31e9d67
+    container_name: my-express-container
+    ports:
+      - "3300:3300"
+    networks:
+      - my-network
+    environment:
+      MONGO_USERNAME: root
+      MONGO_PASSWORD: example
+    depends_on:
+      - mongodb
+
+  react:
+    image: fef173cd6ef1
+    container_name: my-react-container
+    ports:
+      - "8080:80"
+    networks:
+      - my-network
+    environment:
+      MONGO_USERNAME: root
+      MONGO_PASSWORD: example
+    depends_on:
+      - express-server
+
+volumes:
+  mongodb_data:
+
+networks:
+  my-network:

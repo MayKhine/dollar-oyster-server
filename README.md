@@ -52,3 +52,22 @@ docker build --load -t oyster/server:0.0 .
 - build docker image and get the id
 - use that id in docker compose yml
 - run using docker-compose up
+
+docker exec -it 43a63bac3630 mongosh
+docker exec -it 43a63bac3630 mongosh -u root -p example
+docker exec -it 2044cfdcf47b /bin/bash
+docker exec -it 43a63bac3630 mongosh -u root -p example
+
+-- mongo in docker
+docker run -d -p 27017:27017 --name my-mongo-container mongo
+dcoker ps
+docker exec -it my-mongo-container mongosh
+
+structure
+
+- project root
+  - react
+    - docker file
+  - server
+    - docker file
+  - docker-compose.yml

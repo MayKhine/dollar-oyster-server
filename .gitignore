@@ -11,6 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
+mongodb_data
+
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +25,4 @@ dist-ssr
 *.sln
 *.sw?
 images
+mongodb_data

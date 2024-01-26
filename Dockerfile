@@ -14,4 +14,3 @@ EXPOSE 3300
 
 CMD ["./node_modules/.bin/ts-node" , "./src/App.ts"]
 
-LABEL org.opencontainers.image.architecture='amd64 arm64'
